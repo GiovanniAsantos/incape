@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.containerHeader {
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgLogo {
+    width: 7rem;
+    height: 7rem;
+}

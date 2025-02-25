@@ -1,0 +1,21 @@
+.containerAbout {
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura */
+    max-width: 800px; /* Define um limite de largura para o contêiner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    margin: 0 auto; /* Centraliza o contêiner na tela */
+    text-align: center; /* Garante que o texto dentro do contêiner fique centralizado */
+  }
+  
+  .titleAbout {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    margin-bottom: 20px; /* Adiciona um espaçamento abaixo do título */
+  }
+  
+  .textAbout {
+    font-size: 1.2rem;
+    margin-bottom: 20px; /* Adiciona um espaçamento abaixo do texto */
+  }
