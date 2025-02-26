@@ -1,8 +1,9 @@
 import { useRef } from "react";
 import AboutUs from "./Components/AboutUs";
-import Body from "./Components/Body";
+import Body from "./Components/Mission";
 import Header from "./Components/Header";
 import "./style/global.css";
+import Footer from "./Components/Footer";
 
 function App() {
   const homeWelcomeRef = useRef(null);
@@ -21,12 +22,17 @@ function App() {
         coursesRef={coursesRef}
         footerRef={footerRef}
       />
-      <div ref={homeWelcomeRef}> 
-        <Body />
-      </div>
       <div ref={aboutUsRef}> 
         <AboutUs />
       </div>
+      <div ref={homeWelcomeRef}> 
+        <Body />
+      </div>
+
+      <div ref={footerRef}> 
+        <Footer />
+      </div>
+      
     </>
   );
 }

@@ -1,5 +1,9 @@
 import "./style.css";
 import PropTypes from "prop-types";
+import thinkingMan from "../../assets/thinkingMan.png";
+import hat from "../../assets/hat.png";
+import pc from "../../assets/pc.png";
+import team from "../../assets/team.png";
 const AboutUs = ({ footerRef }) => {
   const handleScrollToFooter = () => {
     footerRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -7,16 +11,32 @@ const AboutUs = ({ footerRef }) => {
 
   return (
     <div className="containerAbout">
-      <h1 className="titleAbout">Sobre Nós</h1>
+      <div className="titleContainer">
+        <h1 className="titleAbout">Quem somos</h1>
+        <img className="aboutIcon" src={team} alt="Ícone Missão" />
+      </div>
       <p className="textAbout">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-        consequatur maxime ratione. Ab magni consequatur ipsum, mollitia
-        provident perferendis impedit laudantium sit atque voluptas eius
-        deleniti quod distinctio labore excepturi sequi minus corrupti,
-        aspernatur quis temporibus facilis illum modi accusamus. Para nos
-        procurar, basta clicar no botão abaixo
+        Bem-vindo ao Instituto Nacional de Capacitação, Avaliação e Pesquisa
+        (INCAPE), uma instituição que vai além da realização de Cursos de
+        Formação e Capacitações. Fundado em 2009, o INCAPE tem suas raízes
+        profundamente plantadas na missão de promover o desenvolvimento humano e
+        social. Uma instituição catalisadora de oportunidades, construtora de
+        conhecimentos e defensora do desenvolvimento inclusivo.
       </p>
-      <button onClick={handleScrollToFooter}>Clique Aqui</button>
+      <div className="cardsContainer">
+        <div className="cardAboutUs">
+          <img src={hat} alt="" />
+          <p>Excelência Técnica</p>
+        </div>
+        <div className="cardAboutUs">
+          <img src={thinkingMan} alt="" />
+          <p>Serviços Especializados em Concursos Públicos</p>
+        </div>
+        <div className="cardAboutUs">
+          <img src={pc} alt="" />
+          <p>Processos Seletivos e Cursos</p>
+        </div>
+      </div>
     </div>
   );
 };

@@ -16,19 +16,16 @@ const Navbar = ({
         className="buttonNavbar"
         onClick={() => handleScroll(homeWelcomeRef)}
       >
-        Home
+        Quem Somos
       </button>
       <button className="buttonNavbar" onClick={() => handleScroll(aboutUsRef)}>
-        Sobre
+        Missão
       </button>
       <button
         className="buttonNavbar"
         onClick={() => handleScroll(contractsRef)}
       >
-        Contratos
-      </button>
-      <button className="buttonNavbar" onClick={() => handleScroll(coursesRef)}>
-        Cursos
+        Objetivos
       </button>
       <button
         className="buttonNavbar"
