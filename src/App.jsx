@@ -1,14 +1,14 @@
 import { useRef } from "react";
 import AboutUs from "./Components/AboutUs";
-import Body from "./Components/Mission";
-import Header from "./Components/Header";
-import "./style/global.css";
 import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import Mission from "./Components/Mission";
+import "./style/global.css";
+import Contacts from "./Components/Contacts";
 
 function App() {
   const homeWelcomeRef = useRef(null);
   const aboutUsRef = useRef(null);
-  const contractsRef = useRef(null);
   const contactsRef = useRef(null);
   const coursesRef = useRef(null);
   const footerRef = useRef(null);
@@ -17,22 +17,26 @@ function App() {
       <Header
         homeWelcomeRef={homeWelcomeRef}
         aboutUsRef={aboutUsRef}
-        contractssRef={contractsRef}
         contactssRef={contactsRef}
         coursesRef={coursesRef}
         footerRef={footerRef}
       />
-      <div ref={aboutUsRef}> 
+
+      <div ref={aboutUsRef}>
         <AboutUs />
       </div>
-      <div ref={homeWelcomeRef}> 
-        <Body />
+
+      <div ref={homeWelcomeRef}>
+        <Mission />
       </div>
 
-      <div ref={footerRef}> 
+      <div ref={contactsRef}>
+        <Contacts />
+      </div>
+
+      <div ref={footerRef}>
         <Footer />
       </div>
-      
     </>
   );
 }
