@@ -7,7 +7,7 @@ const Header = ({
   aboutUsRef,
   contractsRef,
   contactsRef,
-  coursesRef,
+  goalsRef,
   footerRef,
 }) => {
   return (
@@ -19,7 +19,7 @@ const Header = ({
           aboutUsRef={aboutUsRef}
           contractssRef={contractsRef}
           contactssRef={contactsRef}
-          coursesRef={coursesRef}
+          goalsRef={goalsRef}
           footerRef={footerRef}
         />
       </div>
@@ -32,6 +32,6 @@ Header.propTypes = {
   aboutUsRef: PropTypes.object.isRequired,
   contractsRef: PropTypes.object.isRequired,
   contactsRef: PropTypes.object.isRequired,
-  coursesRef: PropTypes.object.isRequired,
+  goalsRef: PropTypes.object.isRequired,
 };
 export default Header;

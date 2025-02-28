@@ -5,12 +5,13 @@ import Header from "./Components/Header";
 import Mission from "./Components/Mission";
 import "./style/global.css";
 import Contacts from "./Components/Contacts";
+import Goals from "./Components/Goals";
 
 function App() {
   const homeWelcomeRef = useRef(null);
   const aboutUsRef = useRef(null);
   const contactsRef = useRef(null);
-  const coursesRef = useRef(null);
+  const goalsRef = useRef(null);
   const footerRef = useRef(null);
   return (
     <>
@@ -18,9 +19,13 @@ function App() {
         homeWelcomeRef={homeWelcomeRef}
         aboutUsRef={aboutUsRef}
         contactssRef={contactsRef}
-        coursesRef={coursesRef}
+        goalsRef={goalsRef}
         footerRef={footerRef}
       />
+
+      <div ref={aboutUsRef}>
+        <Goals />
+      </div>
 
       <div ref={aboutUsRef}>
         <AboutUs />

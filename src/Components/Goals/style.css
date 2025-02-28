@@ -1,0 +1,123 @@
+.goalsWrapper {
+    width: 90%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .homegoalsContainer {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .goalsTitle {
+    color: #0C2340; /* Azul escuro */
+    font-size: 4rem; /* Tamanho maior */
+    font-weight: bold;
+  }
+  
+  .goalsIcon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .goalsParagraph {
+    color: #4A4A4A;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Botão CTA */
+  .goalsCTA {
+    margin-top: 20px;
+    background-color: #FFC107; /* Amarelo */
+    color: #0C2340; /* Azul escuro */
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+  }
+  
+  .goalsCTA:hover {
+    background-color: #0C2340;
+    color: #FFC107;
+    transform: scale(1.05);
+  }
+  
+  /* Estilização da imagem */
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(3deg); /* Pequena rotação para efeito moderno */
+  }
+  
+  .goalsImage {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(255, 193, 7, 0.5);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 1024px) {
+    .goalsWrapper {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .homegoalsContainer, .imageContainer {
+      max-width: 100%;
+    }
+    .goalsTitle {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .goalsTitle {
+      font-size: 2.5rem;
+    }
+    .goalsParagraph {
+      font-size: 1rem;
+      max-width: 600px;
+    }
+    .goalsCTA {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+    .imageContainer {
+      display: none; /* Remove a imagem em telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .goalsTitle {
+      font-size: 2rem;
+    }
+    .goalsIcon {
+      width: 40px;
+      height: 40px;
+    }
+    .goalsParagraph {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      max-width: 90%;
+    }
+  }
+  

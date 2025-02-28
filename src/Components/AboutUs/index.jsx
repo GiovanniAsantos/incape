@@ -30,11 +30,11 @@ const AboutUs = ({ footerRef }) => {
         </div>
         <div className="cardAboutUs">
           <img src={thinkingMan} alt="" />
-          <p>Serviços Especializados em Concursos Públicos</p>
+          <p>Serviços Especializados em Capacitações e Formações</p>
         </div>
         <div className="cardAboutUs">
           <img src={pc} alt="" />
-          <p>Processos Seletivos e Cursos</p>
+          <p>Compras e Licitações</p>
         </div>
       </div>
     </div>

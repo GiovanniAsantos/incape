@@ -3,9 +3,8 @@ import PropTypes from "prop-types";
 const Navbar = ({
   homeWelcomeRef,
   aboutUsRef,
-  contractsRef,
   contactsRef,
-  coursesRef,
+  goalsRef,
 }) => {
   const handleScroll = (ref) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -23,7 +22,7 @@ const Navbar = ({
       </button>
       <button
         className="buttonNavbar"
-        onClick={() => handleScroll(contractsRef)}
+        onClick={() => handleScroll(goalsRef)}
       >
         Objetivos
       </button>
@@ -41,6 +40,6 @@ Navbar.propTypes = {
   aboutUsRef: PropTypes.object.isRequired,
   contractsRef: PropTypes.object.isRequired,
   contactsRef: PropTypes.object.isRequired,
-  coursesRef: PropTypes.object.isRequired,
+  goalsRef: PropTypes.object.isRequired,
 };
 export default Navbar;

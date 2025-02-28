@@ -3,7 +3,7 @@
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     text-align: center;
@@ -45,7 +45,6 @@
     transform: scale(1.05);
 }
 
-
 .contactInput {
     text-decoration: none;
     width: 25rem;
@@ -54,4 +53,26 @@
     background-color: #F4F4F4;
     color: #0C2340;
     border: 1px solid #FFC107;
+}
+
+.contactButtonsContainer {
+    margin-top: 2rem;
+    display: flex;
+    width: 25rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactButton {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid #FFC107;
+    background-color: #F4F4F4;
+    cursor: pointer;
+}
+
+.contactButton:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(255, 193, 7, 0.3);
 }
