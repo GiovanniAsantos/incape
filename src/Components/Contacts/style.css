@@ -3,7 +3,7 @@
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     text-align: center;
@@ -16,20 +16,36 @@
     font-weight: bold;
 }
 
+.contactIcon {
+    width: 40px;
+    height: 40px;
+}
+
 .formContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 20rem;
-    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    gap: 15px;
+    padding: 20px;
+}
+
+.contactInput {
+    width: 100%;
+    max-width: 400px;
+    height: 3rem;
+    border-radius: 5px;
+    background-color: #F4F4F4;
+    color: #0C2340;
+    border: 1px solid #FFC107;
+    padding: 10px;
 }
 
 .contactCTA {
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #FFC107;
-    /* Amarelo */
     color: #0C2340;
-    /* Azul escuro */
     border: none;
     padding: 12px 24px;
     font-size: 1.2rem;
@@ -45,34 +61,53 @@
     transform: scale(1.05);
 }
 
-.contactInput {
-    text-decoration: none;
-    width: 25rem;
-    height: 3rem;
-    border-radius: 5px;
-    background-color: #F4F4F4;
-    color: #0C2340;
-    border: 1px solid #FFC107;
-}
-
 .contactButtonsContainer {
-    margin-top: 2rem;
     display: flex;
-    width: 25rem;
     align-items: center;
-    justify-content: space-between;
+    /* Alinha os itens lateralmente */
+    gap: 10px;
+    margin-top: 2rem;
 }
 
 .contactButton {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     border: 1px solid #FFC107;
     background-color: #F4F4F4;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .contactButton:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 15px rgba(255, 193, 7, 0.3);
+}
+
+.iconContactButton {
+    font-size: 1.5rem;
+    color: #0C2340;
+    /* Cor padrão azul */
+    transition: color 0.3s ease-in-out;
+}
+
+.contactButton:hover .iconContactButton {
+    color: #FFC107;
+    /* Altera a cor para amarelo ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contactButtonsContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contactTitle {
+        font-size: 2.5rem;
+    }
 }

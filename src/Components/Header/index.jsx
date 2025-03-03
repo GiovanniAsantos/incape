@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 const Header = ({
   homeWelcomeRef,
   aboutUsRef,
-  contractsRef,
   contactsRef,
   goalsRef,
   footerRef,
@@ -17,7 +16,6 @@ const Header = ({
         <Navbar
           homeWelcomeRef={homeWelcomeRef}
           aboutUsRef={aboutUsRef}
-          contractssRef={contractsRef}
           contactssRef={contactsRef}
           goalsRef={goalsRef}
           footerRef={footerRef}

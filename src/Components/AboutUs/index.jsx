@@ -5,10 +5,6 @@ import hat from "../../assets/hat.png";
 import pc from "../../assets/pc.png";
 import team from "../../assets/team.png";
 const AboutUs = ({ footerRef }) => {
-  const handleScrollToFooter = () => {
-    footerRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <div className="containerAbout">
       <div className="titleContainer">

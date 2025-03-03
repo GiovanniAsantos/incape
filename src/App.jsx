@@ -24,15 +24,15 @@ function App() {
       />
 
       <div ref={aboutUsRef}>
-        <Goals />
-      </div>
-
-      <div ref={aboutUsRef}>
         <AboutUs />
       </div>
 
       <div ref={homeWelcomeRef}>
         <Mission />
+      </div>
+
+      <div ref={aboutUsRef}>
+        <Goals />
       </div>
 
       <div ref={contactsRef}>
