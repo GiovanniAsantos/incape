@@ -40,6 +40,9 @@
     color: #0C2340;
     border: 1px solid #FFC107;
     padding: 10px;
+    text-decoration: none; /* Remove sublinhado */
+    outline: none; 
+    padding-left: 1rem;
 }
 
 .contactCTA {

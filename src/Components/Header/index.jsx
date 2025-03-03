@@ -16,7 +16,7 @@ const Header = ({
         <Navbar
           homeWelcomeRef={homeWelcomeRef}
           aboutUsRef={aboutUsRef}
-          contactssRef={contactsRef}
+          contactsRef={contactsRef}
           goalsRef={goalsRef}
           footerRef={footerRef}
         />
@@ -28,7 +28,6 @@ const Header = ({
 Header.propTypes = {
   homeWelcomeRef: PropTypes.object.isRequired,
   aboutUsRef: PropTypes.object.isRequired,
-  contractsRef: PropTypes.object.isRequired,
   contactsRef: PropTypes.object.isRequired,
   goalsRef: PropTypes.object.isRequired,
 };

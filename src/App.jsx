@@ -18,8 +18,8 @@ function App() {
       <Header
         homeWelcomeRef={homeWelcomeRef}
         aboutUsRef={aboutUsRef}
-        contactssRef={contactsRef}
         goalsRef={goalsRef}
+        contactsRef={contactsRef}
         footerRef={footerRef}
       />
 
@@ -31,7 +31,7 @@ function App() {
         <Mission />
       </div>
 
-      <div ref={aboutUsRef}>
+      <div ref={goalsRef}>
         <Goals />
       </div>
 
