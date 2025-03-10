@@ -12,7 +12,7 @@ const Contacts = ({ contactsRef }) => {
 
   const handleEmailClick = () => {
     const isMobile = /Mobi|Android/i.test(navigator.userAgent);
-    const emailAddress = "giovanniadev@gmail.com";
+    const emailAddress = "contato@incape.org";
     const subject = "Contato via Site Incape";
     const body = `
     Nome: ${name}
@@ -44,7 +44,7 @@ const Contacts = ({ contactsRef }) => {
   };
 
   const handleInstagramClick = () => {
-    const instagramUrl = "https://www.instagram.com/giovanni_asn"; // Substitua pelo seu usuário do Instagram
+    const instagramUrl = "https://www.instagram.com/_incape"; // Substitua pelo seu usuário do Instagram
     window.open(instagramUrl, "_blank");
   };
 
