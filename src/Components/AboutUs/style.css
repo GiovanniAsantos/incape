@@ -1,20 +1,23 @@
 .containerAbout {
   width: 100%;
-  max-width: 1200px; /* Ajustado para telas maiores */
+  max-width: 1200px;
+  /* Ajustado para telas maiores */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   text-align: center;
-  padding: 20px; /* Adicionado padding para espaçamento interno */
+  padding: 20px;
+  /* Adicionado padding para espaçamento interno */
 }
 
 .titleContainer {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-wrap: wrap; /* Permite quebra em telas menores */
+  flex-wrap: wrap;
+  /* Permite quebra em telas menores */
   justify-content: center;
 }
 
@@ -33,14 +36,16 @@
 .textAbout {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  padding: 0 15px; /* Garante espaçamento lateral */
+  padding: 0 15px;
+  /* Garante espaçamento lateral */
 }
 
 /* Grid responsivo para os cards */
 .cardsContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centraliza os cards */
+  justify-content: center;
+  /* Centraliza os cards */
   gap: 20px;
   margin-top: 40px;
 }
@@ -67,6 +72,10 @@
   transform: translateY(-5px);
 }
 
+.imgCard {
+  width:4rem
+}
+
 /* 🔹 Responsividade */
 
 /* Para telas médias (tablets) */
@@ -74,9 +83,11 @@
   .titleAbout {
     font-size: 2.5rem;
   }
+
   .textAbout {
     font-size: 1rem;
   }
+
   .cardAboutUs {
     width: 220px;
     height: 220px;
@@ -88,19 +99,25 @@
   .titleAbout {
     font-size: 2rem;
   }
+
   .aboutIcon {
     width: 30px;
     height: 30px;
   }
+
   .textAbout {
     font-size: 1rem;
   }
+
   .cardsContainer {
-    flex-direction: column; /* Empilha os cards */
+    flex-direction: column;
+    /* Empilha os cards */
     align-items: center;
   }
+
   .cardAboutUs {
-    width: 90%; /* Ocupa quase toda a largura */
+    width: 90%;
+    /* Ocupa quase toda a largura */
     height: auto;
     padding: 20px;
   }

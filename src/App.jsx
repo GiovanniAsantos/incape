@@ -28,7 +28,7 @@ function App() {
       </div>
 
       <div ref={homeWelcomeRef}>
-        <Mission />
+        <Mission footerRef={footerRef} />
       </div>
 
       <div ref={goalsRef}>

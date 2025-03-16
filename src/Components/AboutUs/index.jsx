@@ -1,10 +1,9 @@
 import "./style.css";
-import PropTypes from "prop-types";
-import thinkingMan from "../../assets/thinkingMan.png";
+import form from "../../assets/form.png";
 import hat from "../../assets/hat.png";
 import pc from "../../assets/pc.png";
 import team from "../../assets/team.png";
-const AboutUs = ({ footerRef }) => {
+const AboutUs = () => {
   return (
     <div className="containerAbout">
       <div className="titleContainer">
@@ -21,24 +20,20 @@ const AboutUs = ({ footerRef }) => {
       </p>
       <div className="cardsContainer">
         <div className="cardAboutUs">
-          <img src={hat} alt="" />
+          <img className="imgCard" src={hat} alt="" />
           <p>Excelência Técnica</p>
         </div>
         <div className="cardAboutUs">
-          <img src={thinkingMan} alt="" />
+          <img className="imgCard" src={form} alt="" />
           <p>Serviços Especializados em Capacitações e Formações</p>
         </div>
         <div className="cardAboutUs">
-          <img src={pc} alt="" />
+          <img className="imgCard" src={pc} alt="" />
           <p>Compras e Licitações</p>
         </div>
       </div>
     </div>
   );
-};
-
-AboutUs.propTypes = {
-  footerRef: PropTypes.object.isRequired,
 };
 
 export default AboutUs;

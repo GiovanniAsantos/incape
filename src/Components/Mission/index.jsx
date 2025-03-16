@@ -1,8 +1,16 @@
 import "./style.css";
 import missionImg from "../../assets/missionImg.jpg";
 import iconBullsEye from "../../assets/iconBullsEye.png";
-
-const Mission = () => {
+import PropTypes from "prop-types";
+const Mission = ({ footerRef }) => {
+  const handleScroll = (ref) => {
+    if (!ref || !ref.current) {
+      console.error("footerRef está indefinido");
+      return;
+    }
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+  
   return (
     <div className="missionWrapper">
       <div className="homeMissionContainer">
@@ -18,13 +26,16 @@ const Mission = () => {
           e social. Uma instituição catalisadora de oportunidades, construtora
           de conhecimentos e defensora do desenvolvimento inclusivo.
         </p>
-        <button className="missionCTA">Saiba Mais</button>
+        <button onClick={() => handleScroll(footerRef)} className="missionCTA">Saiba Mais</button>
       </div>
       <div className="imageContainer">
         <img src={missionImg} alt="Missão" className="missionImage" />
       </div>
     </div>
   );
+};
+Mission.propTypes = {
+  footerRef: PropTypes.object.isRequired,
 };
 
 export default Mission;
