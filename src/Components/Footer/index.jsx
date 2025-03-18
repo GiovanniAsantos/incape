@@ -5,7 +5,7 @@ const Footer = () => {
     <p>© 2025 INCAPE. Todos os direitos reservados.</p>
                 <p>📞 Telefone: (85) 99903-6278.</p>
                 <p>📧 E-mail: contato@incape.org</p>
-                <p>📸 Instagram: Incape_insta</p>
+                <p>📸 Instagram: @_incape</p>
                 <p>💻 Made by Giovanni Azevedo.</p>
                 <a 
                     href="https://github.com/GiovanniAsantos/incape-landingPage.git" 
